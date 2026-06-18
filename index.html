@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Campus Companion</h1>
+
+    <!-- Dark Mode -->
+    <button onclick="toggleMode()">🌙 Dark Mode</button>
+
+    <!-- CGPA Calculator -->
+    <div class="card">
+        <h2>CGPA Calculator</h2>
+
+        <input type="number" id="s1" placeholder="Subject 1 GPA">
+        <input type="number" id="s2" placeholder="Subject 2 GPA">
+        <input type="number" id="s3" placeholder="Subject 3 GPA">
+
+        <button onclick="calculateCGPA()">Calculate</button>
+
+        <h3 id="cgpaResult"></h3>
+    </div>
+
+    <!-- Attendance Tracker -->
+    <div class="card">
+        <h2>Attendance Tracker</h2>
+
+        <input type="number" id="present" placeholder="Present Days">
+        <input type="number" id="absent" placeholder="Absent Days">
+
+        <button onclick="calculateAttendance()">Check Attendance</button>
+
+        <h3 id="attendanceResult"></h3>
+    </div>
+
+    <!-- To Do List -->
+    <div class="card">
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter Task">
+
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Study Planner -->
+    <div class="card">
+        <h2>Study Planner</h2>
+
+        <input type="text" id="subject" placeholder="Subject Name">
+        <input type="date" id="examDate">
+
+        <button onclick="generatePlan()">Generate Plan</button>
+
+        <p id="studyPlan"></p>
+    </div>
+
+    <!-- Quotes -->
+    <div class="card">
+        <h2>Motivational Quote</h2>
+
+        <button onclick="showQuote()">Get Quote</button>
+
+        <p id="quote"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
